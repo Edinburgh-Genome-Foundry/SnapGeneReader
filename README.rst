@@ -1,8 +1,8 @@
 SnapGene Reader
 ===============
 
-.. image:: https://travis-ci.org/Edinburgh-Genome-Foundry/SnapGeneReader.svg?branch=master
-   :target: https://travis-ci.org/Edinburgh-Genome-Foundry/SnapGeneReader
+.. image:: https://github.com/Edinburgh-Genome-Foundry/Flametree/actions/workflows/build.yml/badge.svg
+   :target: https://github.com/Edinburgh-Genome-Foundry/Flametree/actions/workflows/build.yml
    :alt: Travis CI build status
 
 .. image:: https://coveralls.io/repos/github/Edinburgh-Genome-Foundry/SnapGeneReader/badge.svg?branch=master
@@ -16,8 +16,8 @@ SnapGene Reader is a Python library to parse Snapgene ``*.dna`` files into dicti
   from snapgene_reader import snapgene_file_to_dict, snapgene_file_to_seqrecord
 
   file_path = './snap_gene_file.dna'
-  dictionary = snapgene_file_to_dict(filepath)
-  seqrecord = snapgene_file_to_seqrecord(filepath)
+  dictionary = snapgene_file_to_dict(file_path)
+  seqrecord = snapgene_file_to_seqrecord(file_path)
 
 Installation
 ------------
@@ -32,8 +32,8 @@ Test with Pytest:
 
 .. code:: bash
 
-    python -m pytest
-    # or simply "pytest"
+    pytest --cov=snapgene_reader tests/
+
 
 Licence = MIT
 -------------
