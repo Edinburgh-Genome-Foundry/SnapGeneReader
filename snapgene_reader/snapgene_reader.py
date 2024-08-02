@@ -217,7 +217,7 @@ def snapgene_file_to_seqrecord(filepath=None, fileobject=None):
         SnapGene.
     """
     data = snapgene_file_to_dict(filepath=filepath, fileobject=fileobject)
-    strand_dict = {"+": 1, "-": -1, ".": 0}
+    strand_dict = {"+": 1, "-": -1, ".": 0, "=": 0}
 
     if has_dna_alphabet:
         seq = Seq(data["seq"], alphabet=DNAAlphabet())
