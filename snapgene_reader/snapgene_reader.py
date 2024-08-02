@@ -233,7 +233,6 @@ def snapgene_file_to_seqrecord(filepath=None, fileobject=None):
                     end=feature["end"],
                     strand=strand_dict[feature["strand"]],
                 ),
-                strand=strand_dict[feature["strand"]],
                 type=feature["type"],
                 qualifiers=feature["qualifiers"],
             )
