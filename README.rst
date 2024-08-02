@@ -1,9 +1,9 @@
 SnapGene Reader
 ===============
 
-.. image:: https://github.com/Edinburgh-Genome-Foundry/Flametree/actions/workflows/build.yml/badge.svg
-   :target: https://github.com/Edinburgh-Genome-Foundry/Flametree/actions/workflows/build.yml
-   :alt: Travis CI build status
+.. image:: https://github.com/Edinburgh-Genome-Foundry/SnapGeneReader/actions/workflows/build.yml/badge.svg
+   :target: https://github.com/Edinburgh-Genome-Foundry/SnapGeneReader/actions/workflows/build.yml
+   :alt: GitHub Actions build status
 
 .. image:: https://coveralls.io/repos/github/Edinburgh-Genome-Foundry/SnapGeneReader/badge.svg?branch=master
     :target: https://coveralls.io/github/Edinburgh-Genome-Foundry/SnapGeneReader?branch=master
