@@ -9,7 +9,6 @@ version = {}
 with open("snapgene_reader/version.py") as fp:
     exec(fp.read(), version)
 
-
 setup(
     name="snapgene_reader",
     version=version["__version__"],

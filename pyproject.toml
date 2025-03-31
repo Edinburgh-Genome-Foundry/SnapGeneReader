@@ -1,0 +1,22 @@
+[project]
+name = "snapgene_reader"
+version = "0.1.21"
+license = "MIT"
+authors = [{ name = "yishaluo" }]
+description = "Convert Snapgene *.dna files dict/json/biopython."
+readme = "pypi-readme.rst"
+keywords = ["DNA", "sequence", "design", "format", "converter"]
+dependencies = ["biopython", "xmltodict", "html2text"]
+
+[project.urls]
+Homepage = "https://github.com/Edinburgh-Genome-Foundry/SnapGeneReader"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+exclude = ["docs"]
