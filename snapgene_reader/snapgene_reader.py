@@ -1,6 +1,7 @@
 """
 snapgene reader main file
 """
+
 import struct
 
 # import json
@@ -350,13 +351,15 @@ def snapgene_file_to_gbk(read_file_object, write_file_object):
         if strand == "-":
             wfo.write(
                 "     {} complement({})\n".format(
-                    analyse_gs(feature, "type", default=" ").ljust(15), line,
+                    analyse_gs(feature, "type", default=" ").ljust(15),
+                    line,
                 )
             )
         else:
             wfo.write(
                 "     {} {}\n".format(
-                    analyse_gs(feature, "type", default=" ").ljust(15), line,
+                    analyse_gs(feature, "type", default=" ").ljust(15),
+                    line,
                 )
             )
         strand = analyse_gs(feature, "strand", default="")
