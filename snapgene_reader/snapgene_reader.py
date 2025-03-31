@@ -52,12 +52,10 @@ def snapgene_file_to_dict(filepath=None, fileobject=None):
 
     Parameters
     ----------
-    filepath
+    filepath : str
         Path to a .dna file created with SnapGene.
-
-    fileobject
-        On object-like pointing to the data of a .dna file created with
-        SnapGene.
+    fileobject : object
+        An object-like pointing to the data of a .dna file created with SnapGene.
     """
     if filepath is not None:
         fileobject = open(filepath, "rb")
@@ -210,12 +208,10 @@ def snapgene_file_to_seqrecord(filepath=None, fileobject=None):
 
     Parameters
     ----------
-    filepath
+    filepath : str
         Path to a .dna file created with SnapGene.
-
-    fileobject
-        On object-like pointing to the data of a .dna file created with
-        SnapGene.
+    fileobject : object
+        An object-like pointing to the data of a .dna file created with SnapGene.
     """
     data = snapgene_file_to_dict(filepath=filepath, fileobject=fileobject)
     strand_dict = {"+": 1, "-": -1, ".": 0, "=": 0}
