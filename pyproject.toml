@@ -1,6 +1,6 @@
 [project]
 name = "snapgene_reader"
-version = "0.1.22"
+version = "0.1.23"
 license = "MIT"
 authors = [{ name = "yishaluo" }]
 description = "Convert Snapgene *.dna files dict/json/biopython."
